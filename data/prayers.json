@@ -1,0 +1,542 @@
+{
+"source_en": "Antiochian Orthodox Christian Archdiocese of North America – Orthodox Prayers (texts of the Pocket Prayer Book): https://antiochian.org/regulararticle/596 (Morning), /597 (Midday), /598 (Evening)",
+"source_ar": "Arabic texts as published by St Anthony the Great Antiochian Orthodox Church, Zahle (Patriarchate of Antioch): صلاة النهوض من النوم https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85 ; صلاة النوم الصغرى https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89",
+"credit_en": "English text: Orthodox Prayers of the Antiochian Orthodox Christian Archdiocese of North America (antiochian.org, Pocket Prayer Book).",
+"credit_ar": "النص العربي: من صلاة النهوض من النوم وصلاة النوم الصغرى بحسب الطقس الأنطاكي الأرثوذكسي، كما نشرتها كنيسة القديس أنطونيوس الكبير – زحلة. الصلوات المعلَّمة لم يُعثر لها على نصّ عربيّ أنطاكيّ منشور، فتُعرض بالإنكليزية.",
+"noar_note": "لم يُعثر على نصّ عربيّ أنطاكيّ منشور لهذه الصلاة؛ النصّ بالإنكليزية:",
+"format": "text_* paragraphs are separated by a blank line; (…) in text is a rubric such as (thrice). Empty text_ar = no published Antiochian Arabic text found.",
+"sections": [
+{
+"id": "morning",
+"title_en": "Morning Prayers",
+"title_ar": "صلوات الصباح",
+"sub_en": "",
+"sub_ar": "",
+"prayers": [
+{
+"id": "m01",
+"title_en": "The Trisagion Prayers",
+"title_ar": "صلوات التريصاجيون (التقديسات الثلاث)",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "In the Name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nGlory to thee, our God, glory to thee.\n\nO heavenly King, the Comforter, Spirit of Truth, Who art in all places, and fillest all things, Treasury of good things, and Giver of life, come, and abide in us, and cleanse us from every stain; and save our souls, O good One.\n\nHoly God, Holy Mighty, Holy Immortal: have mercy on us. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever and unto ages of ages. Amen.\n\nAll-holy Trinity, have mercy on us. Lord, cleanse us from our sins. Master, pardon our iniquities. Holy One, visit and heal our infirmities for thy Name's sake.\n\nLord, have mercy. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever, and unto ages of ages. Amen.\n\nOur Father, who art in heaven, hallowed be thy Name; thy kingdom come; thy will be done on earth, as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from the evil one.\n\nThrough the prayers of our holy Fathers, Lord Jesus Christ our God, have mercy on us and save us. Amen.",
+"text_ar": "بسم الآب والابن والروح القدس الإله الواحد آمين\n\nالمجد لك يا إلهنا المجد لك\n\nأيُّها الملكُ السماوي المعزي روحُ الحق، الحاضرُ في كلِّ مكان، والمالئُ الكل، كنزُ الصالحات ورازقُ الحياة، هلمَّ واسكن فينا وطهِّرنا من كلِّ دنس وخلِّص أيها الصالح نفوسنا.\n\nقدوسٌ الله قدوسٌ القوي قدوسٌ الذي لا يموت ارحمنا (ثلاثًا)\n\nالمجدُ للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأيُّها الثالوثُ القدُّوس ارحمنا. يا ربُّ اغفر خطايانا. يا سيد تجاوز عن سيئاتنا. يا قدوسُ اطلع واشفِ أمراضَنا من أجل اسمكَ. يا ربُّ ارحم يا ربُّ ارحم يا ربّ ارحم.\n\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأبانا الذي في السماوات. ليتقدَّس اسمُك. ليأتِ ملكوتُك. لتكُن مشيئتُك. كما في السماءِ كذلك على الأرض. خبزَنا الجوهري أعطِنا اليوم. واترك لنا ما علينا كما نتركُ نحنُ لمن لنا عليه. ولا تُدخلنا في تجربة. لكن نجِّنا من الشرير. آمين\n\nبصلوات آبائنا القديسين أيها الرب يسوع المسيح إلهنا ارحمنا وخلصنا، آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+},
+{
+"id": "m02",
+"title_en": "Troparia to the Holy Trinity",
+"title_ar": "طروباريات للثالوث القدوس",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Having arisen from sleep, we fall down before thee, O Good One, and sing to thee, O Mighty One, the angelic hymn: Holy, holy, holy art thou, O God; through the Theotokos, have mercy on us.\n\nGlory to the Father and to the Son and to the Holy Spirit.\n\nFrom bed and sleep thou hast raised me, O Lord; enlighten my mind and my heart, and open my lips that I may praise thee, O Holy Trinity: Holy, holy, holy art thou, O God; through the Theotokos, have mercy on us.\n\nBoth now and ever, and unto ages of ages. Amen.\n\nSuddenly the Judge shall come and the deeds of each shall be revealed; but with fear let us cry out in the middle of the night: Holy, holy, holy art thou, O God; through the Theotokos have mercy on us.\n\nLord, have mercy. (12 times)",
+"text_ar": "عندَ نهوضِنا من النوم، لكَ نجثو أيها الصالح ونهتفُ إليك أيها القدير بتسبحة الملائكة قائلين: قدوسٌ قدوسٌ قدوسٌ أنتَ يا الله من أجل والدةِ الإلهِ ارحمنا.\n\nالمجد للآب والابن والروح القدس\n\nلقد أنهضتَني من سريري ومن نومي، فأضِئ يا رب عقلي وقلبي وافتح شفتيَّ لأسبحَكَ أيها الثالوث القدوس هاتفاً: قدوسٌ قدوسٌ قدوسٌ أنتَ يا الله من أجل والدةِ الإلهِ ارحمنا.\n\nالآن وكل أوان وإلى دهر الداهرين. آمين\n\nسيوافي القاضي على غفلةٍ، وتُجرَد لكلِّ واحدٍ منَّا أعمالُه، فلذلك سبيلُنا أن نصرخ بخوفٍ في نصف الليل هاتفين: قدوسٌ قدوسٌ قدوسٌ أنتَ يا الله من أجل والدةِ الإلهِ ارحمنا.\n\nيا ربُّ ارحمْ (اثنتي عشرة مرة)",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+},
+{
+"id": "m03",
+"title_en": "A Prayer to the Holy Trinity",
+"title_ar": "صلاة إلى الثالوث القدوس",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Arising from sleep I thank thee, O Holy Trinity, because, of thy great goodness and long suffering, thou wast not wroth with me, slothful and sinful as I am, neither hast thou destroyed me in my transgressions, but in thy compassion thou hast raised me up as I lay in despair, that at dawn I might sing the glories of thy majesty. Do thou now enlighten the eyes of mine understanding and open my mouth to meditate on thy words, to understand thy commandments, to do thy will, to hymn thee in heartfelt confession, and to praise thine all-holy name, of the Father and of the Son and of the Holy Spirit, now and ever, and unto ages of ages. Amen.",
+"text_ar": "عند نهوضي من النومِ أشكرُك أيها الثالوث القدوس، لأنك لأجل كثرةِ صلاحكَ وطولِ أناتِك، لم تغضبْ عليَّ أنا الخاطئ، ولا أهلكتني بآثامي، بل تعطَّفت عليَّ كما هو دأبُك، وأنهضتَني أنا الطريحُ في اليأسِ لأُبكِّر وأمجِّد عزتك. فالآن أنرْ عينيَّ وعقلي، وافتحْ فمي لألهجَ بأقوالكَ وأتفهمَ وصاياك واصنعَ مشيئتكَ، وأرتِّل لكَ بشكرِ قلبٍ، وأسبّحُ اسمك الكليَّ قدسُه أيها الآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+},
+{
+"id": "m04",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Come, let us worship and fall down before God our King. (metania)\n\nCome, let us worship and fall down before Christ, our King and God. (metania)\n\nCome, let us worship and fall down before Christ himself, our King and our God. (metania)",
+"text_ar": "هلموا لنسجدْ ونركعْ لملكِنا وإلهنا\n\nهلموا لنسجدْ ونركعْ للمسيح ملكِنا وإلهنا\n\nهلموا لنسجدْ ونركعْ للمسيح هذا هو ربنا وملكُنا وإلهنا",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "m05",
+"title_en": "Psalm 50",
+"title_ar": "المزمور الخمسون",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Have mercy on me, O God, according to thy great mercy; and according to the multitude of thy compassions blot out my transgression. Wash me thoroughly from mine iniquity, and cleanse me from my sin. For I know mine iniquity, and my sin is ever before me. Against thee only have I sinned and done this evil before thee, that thou mightest be justified in thy words and prevail when thou art judged. For behold, I was conceived in iniquities, and in sins did my mother bear me. For behold, thou hast loved truth; the hidden and secret things of thy wisdom hast thou made manifest unto me. Thou shalt sprinkle me with hyssop, and I shall be made clean; thou shalt wash me, and I shall be made whiter than snow. Thou shalt make me to hear joy and gladness; the bones that be humbled, they shall rejoice. Turn thy face away from my sins, and blot out all mine iniquities. Create in me a clean heart, O God, and renew a right spirit within me. Cast me not away from thy presence, and take not thy Holy Spirit from me. Restore unto me the joy of thy salvation, and with thy governing Spirit establish me. I shall teach transgressors thy ways, and the ungodly shall turn back unto thee. Deliver me from blood-guiltiness, O God, thou God of my salvation; my tongue shall rejoice in thy righteousness. O Lord, thou shalt open my lips, and my mouth shall declare thy praise. For if thou hadst desired sacrifice, I had given it; with whole-burnt offerings thou shalt not be pleased. A sacrifice unto God is a broken spirit; a heart that is broken and humbled God will not despise. Do good, O Lord, in thy good pleasure unto Sion, and let the walls of Jerusalem be builded. Then shalt thou be pleased with a sacrifice of righteousness, with oblation and whole-burnt offerings. Then shall they offer bullocks upon thine altar.",
+"text_ar": "ارحمني يا الله كعظيمِ رحمتِكَ وكمثلِ كثرةِ رأْفَتِكَ امْحُ مآثِمي، اغسِلْني كَثيراً من اثْمي ومن خَطيئتي طَهّرْني، فأنّي أنا عارِفٌ بإثْمي وخَطيئتي أمامي في كلِّ حين، إليكَ وحدكَ أخطأتُ والشرُّ قُدامَكَ صَنَعْتُ، لكي تَصْدُقَ في أقوالكَ وتغلِبَ في محاكَمَتِكَ، هاأنذا بالآثامِ حُبلَ بي وبالخطايا ولدتني أُمّي، لأنكَ قد أحببتَ الحقَّ واوْضَحْتَ لي غوامِضَ حِكْمَتِكَ ومَستوراتِها، تَنْضَحْني بالزّوفى فأطْهَرُ، وتَغْسِلْني فأبيّضُ اكثرَ من الثلجِ، تُسمِعْني سُروراً وبهجةً فتبتهجُ عظامي الذَّليلةُ، اصرِفْ وَجْهَكَ عن خَطايايَ وامْحُ كُلَّ مآثِمي، قَلباً نَقِيّاً اخْلِقْ فِيَّ يا الله وروحاً مُستقيماً جدّدْ في أَحشائي، لا تطرَحْني من أمامِ وجْهِكَ، وروحُك القدوسُ لا تَنْزَعْهُ مِنّي، امنَحْني بَهْجَةَ خلاصِكَ وبِروحٍ رِئاسيٍّ اعضدُني، فأُعَلِّمُ الأثَمَةَ طُرُقَكَ والكفرةُ إليْكَ يَرْجِعونَ، نَجِني من الدِّماءِ يا الله إِلهَ خَلاصي فَيَبْتَهِجُ لِساني بِعَدْلِكَ، يا ربُّ افْتَحْ شَفَتَيَّ فَيُخْبِرَ فَمي بِتَسْبِحَتِكَ، لأنَّكَ لو أَرَدْتَ الذَّبيحةَ لَكُنْتُ الآن أُعطي، لكنّكَ لا تُسّرُ بالمُحْرَقاتِ، فالذَّبيحَةُ للهِ روحٌ مُنْسَحِقٌ، القلبُ المتخشِّعُ المتواضِعُ لا يَرْذُلُهُ الله، أصْلِحْ يا ربُ بِمَسَرَّتِكَ صِهيونَ، ولتُبْنَ أَسوارُ أورشَليم، حينئِذٍ تُسَرُّ بِذبيحَةِ العَدْلِ قُرباناً ومُحْرَقاتٍ حينئِذٍ يُقَرِّبونَ على مَذْبَحِكَ العُجولُ.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "m06",
+"title_en": "The Symbol of Faith (The Creed)",
+"title_ar": "دستور الإيمان (قانون الإيمان)",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "I believe in one God, the Father Almighty, Maker of heaven and earth and of all things visible and invisible, And in one Lord Jesus Christ, the Son of God, the only-begotten, begotten of the Father before all worlds, Light of Light, very God of very God, begotten, not made, of one essence with the Father, by whom all things were made, Who for us men and for our salvation came down from heaven and was incarnate of the Holy Spirit and the Virgin Mary and became man And was crucified also for us under Pontius Pilate and suffered and was buried, and the third day He rose again, according to the Scriptures, And ascended into heaven and sitteth at the right hand of the Father; And he shall come again with glory to judge the living and the dead, whose kingdom shall have no end. And I believe in the Holy Spirit, the Lord and Giver of Life, who proceedeth from the Father, Who with the Father and the Son together is worshipped and glorified, who spake by the prophets; And I believe in one holy catholic and apostolic Church. I acknowledge one Baptism for the remission of sins. I look for the resurrection of the dead and the life of the world to come. Amen.",
+"text_ar": "أُؤْمِنُ بإلَهٍ واحِدٍ، آبٍ ضابِطُ الكُلِّ، خالِقِ السماءِ والأَرضِ، كُلِّ ما يُرى وما لا يُرى. وبِرَبٍ واحِدٍ يسُوعَ المسيحِ، ابنِ اللهِ الوَحيدِ، المولودِ منَ الآبِ قبلَ كُلِّ الدُّهورِ، نورٍ من نورٍ، إلهٍ حقٍّ منْ إِلهٍ حقٍّ، مولودٍ غيرِ مَخْلوقٍ، مُساوٍ للآبِ في الجوهَرِ، الذي بِهِ كانَ كُلُّ شيءٍ. الذي مِنْ أَجلِنا نَحنُ البَشَرِ، ومِنْ أجْلِ خلاصِنا نَزَلَ مِنَ السَماءِ وتَجَسَّدَ منَ الرّوحِ القُدُسِ، ومِنْ مَريَمَ العَذراءِ وتأَنَّسَ، وصُلِبَ عنّا على عَهْدِ بيلاطُسَ البُنْطيّ، وتَألَّمَ وقُبِرَ، وقامَ في اليومِ الثالثِ على ما في الكُتُبِ. وصعِدَ إلى السماءِ وجلسَ عن يمينِ الآبْ. وأيضاً يَأتي بِمَجْدٍ ليَدينَ الأحياءَ والأمواتَ، الذي لا فناءَ لمُلكِهِ. وبالرّوحِ القُدُسِ، الربِّ المُحيي، المُنْبَثِقِ مِنَ الآبِ، الذي هو معَ الآبِ والابنِ، مَسجودٌ له ومُمَجَّد، الناطقِ بالأنبياءِ. وبكنيسةٍ واحدةٍ جامعةٍ مقدَّسَةٍ رسوليةٍ. وأعتَرفُ بمعموديةٍ واحدةٍ لمغفِرَةِ الخطايا. وأَتَرَجّى قيامَةَ الموتى، والحياةَ في الدهرِ الآتي. آمين.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "m07",
+"title_en": "A Prayer of St. Basil the Great",
+"title_ar": "صلاة للقديس باسيليوس الكبير",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "We bless thee, O God most high and Lord of mercies, who ever workest great and mysterious deeds for us, glorious, wonderful, and numberless, who providest us with sleep as a rest from our infirmities and as a repose for our bodies tired by labor. We thank thee that thou hast not destroyed us in our transgressions, but in thy love toward mankind thou hast raised us up, as we lay in despair, that we may glorify thy majesty. We entreat thine infinite goodness, enlighten the eyes of our understanding and raise up our minds from the heavy sleep of indolence; open our mouths and fill them with thy praise, that we may unceasingly sing and confess thee, who art God glorified in all and by all, the eternal Father, with thine only-begotten Son and thine all-holy and good and life-giving Spirit, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "m08",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "It is truly meet to bless thee, O Theotokos, who art ever blessed and all-blameless and the Mother of our God. More honorable than the cherubim and more glorious beyond compare than the seraphim, thou who without corruption didst bear God the Word and art truly Theotokos: we magnify thee.",
+"text_ar": "بواجبِ الاستئهالِ حقاً نُغبِّطُ، والدةَ الإلهِ الدّائمةَ الطّوبى، البريئةَ من كلِّ العيوبِ أمَّ إلهِنا. يا مَنْ هي أكرمُ من الشاروبيمِ، وأرفعُ مجداً بغير قياسٍ من السيرافيم، التي بغير فسادٍ ولدَتْ كلمةَ الله، حقاً أنَّك والدةُ الإله، إيّاكِ نُعظِّم.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "m09",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "(Private devotions may be added here.)",
+"rubric_ar": "(هنا يمكن إضافة الصلوات الخاصّة.)",
+"text_en": "Through the prayers of our holy fathers, O Lord Jesus Christ our God, have mercy on us and save us. Amen.",
+"text_ar": "بصلوات آبائنا القديسين أيها الرب يسوع المسيح إلهنا ارحمنا وخلصنا، آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+}
+]
+},
+{
+"id": "addl",
+"title_en": "Additional Morning Prayers",
+"title_ar": "صلوات صباحيّة إضافيّة",
+"sub_en": "",
+"sub_ar": "النص العربي لهذه الصلوات غير منشور في مصدر أنطاكي وجدناه؛ تُعرض بالإنكليزية.",
+"prayers": [
+{
+"id": "a01",
+"title_en": "A Prayer for the Beginning of the Day",
+"title_ar": "صلاة لبداية النهار",
+"sub_en": "by St. Philaret of Moscow",
+"sub_ar": "للقديس فيلاريت متروبوليت موسكو",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Lord, grant me thy peace to greet all this day is to bring. Grant me the grace to surrender myself completely to thy holy will. In every hour of this day instruct and guide me in all things. Whatever tidings I may receive in this day, teach me to accept tranquilly, in the firm belief that thy holy will governs all. Govern thou my thoughts and feelings in all that I do and say. When unforeseen things occur, let me not forget that all is sent by thee. Teach me to behave sincerely and reasonably towards everyone, that I may bring confusion and sorrow to no one. Bestow on me, O Lord, strength to endure the fatigue of the day, and to bear my part in its events. Guide thou my will. Teach me how to pray. Pray thou thyself within me. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a02",
+"title_en": "First Prayer",
+"title_ar": "الصلاة الأولى",
+"sub_en": "The Prayers of St. Macarius the Great",
+"sub_ar": "صلوات القديس مكاريوس الكبير",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O God, cleanse me, a sinner, for I have never done anything good in thy sight. Deliver me from the evil one, and may thy will be in me, that I may open my unworthy mouth without condemnation and praise thy holy name, of the Father and of the Son and of the Holy Spirit, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a03",
+"title_en": "Second Prayer",
+"title_ar": "الصلاة الثانية",
+"sub_en": "The Prayers of St. Macarius the Great",
+"sub_ar": "صلوات القديس مكاريوس الكبير",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Having risen from sleep, I offer thee, O Saviour, the midnight song and fall down and cry unto thee: grant me not to fall asleep in the death of sin, but have compassion on me, O thou who wast voluntarily crucified, and hasten to raise me who am prostrate in idleness, and save me in prayer and intercession, and after the night’s sleep, bless me with a sinless day, O Christ our God, and save me.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a04",
+"title_en": "Third Prayer",
+"title_ar": "الصلاة الثالثة",
+"sub_en": "The Prayers of St. Macarius the Great",
+"sub_ar": "صلوات القديس مكاريوس الكبير",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Having risen from sleep, I hasten to thee, O Lord, Lover of men, and by thy loving-kindness I strive to do thy works, and I pray to thee: help me at all times, in everything, and deliver me from every evil thing of the world and every attack of the devil, and lead me into thine eternal kingdom. For thou art my Creator, the Giver and Protector of everything good, and all my hope is in thee. And to thee I send up glory, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a05",
+"title_en": "Fourth Prayer",
+"title_ar": "الصلاة الرابعة",
+"sub_en": "The Prayers of St. Macarius the Great",
+"sub_ar": "صلوات القديس مكاريوس الكبير",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Lord, who in thine abundant goodness and thy great compassion hast granted me, thy servant, to pass the time of this night without the temptation of any opposing evil, Lord and Creator of all, by thy true light and with an enlightened heart grant me to do thy will, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a06",
+"title_en": "Fifth Prayer",
+"title_ar": "الصلاة الخامسة",
+"sub_en": "The Prayers of St. Macarius the Great",
+"sub_ar": "صلوات القديس مكاريوس الكبير",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Almighty Lord God, who dost receive from thy heavenly powers the thrice-holy hymn, receive also from me, thine unworthy servant, this song of the night, and grant me every year of my life and at every hour to send up glory to thee, Father, Son, and Holy Spirit, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "a07",
+"title_en": "A General Intercession",
+"title_ar": "طلبة عامّة",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Lord Jesus Christ our God, who in thy mercy and loving-kindness dost regard the prayers of all who call upon thee with their whole heart, incline thine ear and hear my prayer, now humbly offered unto thee:\n\nRemember, O Lord, thy Holy, Orthodox-Catholic and Apostolic Church; confirm, strengthen, increase and keep her in peace and preserve her unconquerable forever;\n\nRemember, O Lord, our father and Metropolitan N., [our Bishop, N.], and every Orthodox bishop, the Priests and Deacons, and all the clergy of thy Church, which thou hast ordained to feed thy flock with thy Word; and by their prayers, have mercy on me and save me, a sinner.\n\nRemember, O Lord, our father(s), N. [my parish priest(s), my confessor], and our entire parish community in Christ, and grant us to serve and glorify thee in oneness of heart and mind.\n\nRemember, O Lord, our civil authorities and our armed forces, this city in which we dwell, and every city and countryside. Grant us peaceful times that we may lead a calm and tranquil life in all godliness and sanctity.\n\nRemember, O Lord, my parents, my brothers and sisters and all my relatives and all who are near and dear to me, NN., and grant them mercy, life, peace, health, salvation, visitation, pardon and remission of sins, that they may evermore praise and glorify thy holy name.\n\nRemember, O Lord, those who travel by land, sea and air, the young and the old, orphans and widows, the sick and the suffering, the sorrowing and the afflicted, those in captivity, and the needy poor; upon them all send forth thy mercies, for thou art the Giver of all good things.\n\nRemember, O Lord, me, thy humble servant; grant me thy grace, that I may be diligent and faithful, that I may avoid evil company and influence and resist all temptation, that I may lead a godly and righteous life, blameless and peaceful, ever serving thee, that I may be accounted worthy at the last to enter into the kingdom of heaven.\n\nRemember, O Lord, those who have fallen asleep in the hope of resurrection unto life eternal, especially NN.; pardon all their transgressions both voluntary and involuntary, committed in word or deed or thought. Shelter them in a place of brightness, a place of verdure, a place of repose, whence all sickness, sorrow and sighing have fled away, and where the sight of thy face rejoiceth all thy saints from all the ages. Grant them thy heavenly kingdom and a portion in thine ineffable and eternal blessings and the enjoyment of thine unending life.\n\nHear my prayer, O Lord, for thou art merciful and compassionate and the Lover of mankind, and unto thee are due all glory, honor and worship, to the Father and to the Son and to the Holy Spirit. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+}
+]
+},
+{
+"id": "midday",
+"title_en": "Midday Prayers",
+"title_ar": "صلوات الظهر",
+"sub_en": "",
+"sub_ar": "",
+"prayers": [
+{
+"id": "d01",
+"title_en": "The Trisagion Prayers",
+"title_ar": "صلوات التريصاجيون (التقديسات الثلاث)",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "In the Name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nGlory to Thee, our God, glory to Thee.\n\nO heavenly King, the Comforter, Spirit of Truth, Who art in all places, and fillest all things, Treasury of good things, and Giver of life, come, and abide in us, and cleanse us from every stain; and save our souls, O good One.\n\nHoly God, Holy Mighty, Holy Immortal: have mercy on us. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever and unto ages of ages. Amen.\n\nAll-holy Trinity, have mercy on us. Lord, cleanse us from our sins. Master, pardon our iniquities. Holy One, visit and heal our infirmities for thy Name's sake.\n\nLord, have mercy. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever, and unto ages of ages. Amen.\n\nOur Father, who art in heaven, hallowed be thy Name; thy kingdom come; thy will be done on earth, as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from the evil one.\n\nThrough the prayers of our holy Fathers, Lord Jesus Christ our God, have mercy on us and save us. Amen.",
+"text_ar": "بسم الآب والابن والروح القدس الإله الواحد آمين\n\nالمجد لك يا إلهنا المجد لك\n\nأيُّها الملكُ السماوي المعزي روحُ الحق، الحاضرُ في كلِّ مكان، والمالئُ الكل، كنزُ الصالحات ورازقُ الحياة، هلمَّ واسكن فينا وطهِّرنا من كلِّ دنس وخلِّص أيها الصالح نفوسنا.\n\nقدوسٌ الله قدوسٌ القوي قدوسٌ الذي لا يموت ارحمنا (ثلاثًا)\n\nالمجدُ للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأيُّها الثالوثُ القدُّوس ارحمنا. يا ربُّ اغفر خطايانا. يا سيد تجاوز عن سيئاتنا. يا قدوسُ اطلع واشفِ أمراضَنا من أجل اسمكَ. يا ربُّ ارحم يا ربُّ ارحم يا ربّ ارحم.\n\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأبانا الذي في السماوات. ليتقدَّس اسمُك. ليأتِ ملكوتُك. لتكُن مشيئتُك. كما في السماءِ كذلك على الأرض. خبزَنا الجوهري أعطِنا اليوم. واترك لنا ما علينا كما نتركُ نحنُ لمن لنا عليه. ولا تُدخلنا في تجربة. لكن نجِّنا من الشرير. آمين\n\nبصلوات آبائنا القديسين أيها الرب يسوع المسيح إلهنا ارحمنا وخلصنا، آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+},
+{
+"id": "d02",
+"title_en": "The Prayer of the Hours",
+"title_ar": "صلاة الساعات",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Christ our God, Who art worshipped and glorified at all times at every hour both in heaven and on earth; Who art long-suffering and plenteous in mercy and compassion; Who lovest the just man and showest mercy upon the sinner; and Who callest all men to repentance through the promise of blessings to come; receive, O Lord, at this very hour our supplications, and direct our lives in the way of Thy commandments: sanctify our souls, purify our bodies, set our minds aright, cleanse our thoughts; deliver us from all affliction, trouble, and distress; compass us about with Thy holy angels, that, guided and guarded by them, we may attain unto the unity of the Faith, and to the knowledge of Thine unapproachable glory; for Thou art blessed unto ages of ages. Amen.",
+"text_ar": "يا مَنْ في كلِّ وقتٍ وفي كلِّ ساعةٍ في السّماءِ وعلى الأرضِ، مسجودٌ له وممجَّد، المسيحُ الإله، الطويلُ الأَنَاةِ، الكثيرُ الرحمةِ، الجزيلُ التحنُّن، الذي يُحبُّ الصدّيقين ويَرحَمُ الخطأة، الدّاعي الكلَّ إلى الخلاصِ بموعِدِ الخيراتِ المُنتَظَرَة، أنتَ يا ربُّ تَقبَّل مِنّا في هذه الساعةِ طِلباتِنا، وسَهِّلْ حياتَنا إلى العملِ بوصاياك. قدِّس أرواحَنا، طَهِّر أجسادَنا، قوِّم أفكارَنا، نَقِّ نيّاتِنا، نجِّنا من كلِّ حُزنٍ وشرٍّ ووجعٍ، حُطْنا بملائكتِكَ القدّيسين، حتّى إذا كُنّا بمُعسكَرِهم مَحفوظين ومُرشَدين، نَصِلُ إلى وِحْدَةِ الإيمان وإلى معرفة مَجدِكَ الذي لا يُدنَى منهُ، فإنك مبارَكٌ إلى دهرِ الدّاهرين. آمين.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "d03",
+"title_en": "A Prayer at Noon",
+"title_ar": "صلاة عند الظهر",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Christ our God, who at this hour didst stretch out Thy loving arms upon the Cross that all men might be gathered unto Thee, help us and save us who cry out unto Thee: Glory to Thee, O Lord.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "d04",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "Here may be added your own private devotions and intercessions, using your own words or the \"Occasional Prayers.\" When you have finished, conclude by saying:",
+"rubric_ar": "هنا يمكن إضافة صلواتك وتضرّعاتك الخاصّة بكلماتك، ثمّ اختم قائلًا:",
+"text_en": "Through the prayers of our holy Fathers, Lord Jesus Christ our God, have mercy upon us and save us. Amen.",
+"text_ar": "بصلوات آبائنا القديسين أيها الرب يسوع المسيح إلهنا ارحمنا وخلصنا، آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+}
+]
+},
+{
+"id": "evening",
+"title_en": "Evening Prayers",
+"title_ar": "صلوات المساء",
+"sub_en": "",
+"sub_ar": "",
+"prayers": [
+{
+"id": "e01",
+"title_en": "The Trisagion Prayers",
+"title_ar": "صلوات التريصاجيون (التقديسات الثلاث)",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "In the Name of the Father, and of the Son, and of the Holy Spirit. Amen.\n\nGlory to thee, our God, glory to thee.\n\nO heavenly King, the Comforter, Spirit of Truth, Who art in all places, and fillest all things, Treasury of good things, and Giver of life, come, and abide in us, and cleanse us from every stain; and save our souls, O good One.\n\nHoly God, Holy Mighty, Holy Immortal: have mercy on us. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever and unto ages of ages. Amen.\n\nAll-holy Trinity, have mercy on us. Lord, cleanse us from our sins. Master, pardon our iniquities. Holy One, visit and heal our infirmities for thy Name's sake.\n\nLord, have mercy. (thrice)\n\nGlory to the Father, and to the Son, and to the Holy Spirit; both now and ever, and unto ages of ages. Amen.\n\nOur Father, who art in heaven, hallowed be thy Name; thy kingdom come; thy will be done on earth, as it is in heaven. Give us this day our daily bread; and forgive us our trespasses, as we forgive those who trespass against us; and lead us not into temptation, but deliver us from the evil one.\n\nThrough the prayers of our holy Fathers, Lord Jesus Christ our God, have mercy on us and save us. Amen.",
+"text_ar": "بسم الآب والابن والروح القدس الإله الواحد آمين\n\nالمجد لك يا إلهنا المجد لك\n\nأيُّها الملكُ السماوي المعزي روحُ الحق، الحاضرُ في كلِّ مكان، والمالئُ الكل، كنزُ الصالحات ورازقُ الحياة، هلمَّ واسكن فينا وطهِّرنا من كلِّ دنس وخلِّص أيها الصالح نفوسنا.\n\nقدوسٌ الله قدوسٌ القوي قدوسٌ الذي لا يموت ارحمنا (ثلاثًا)\n\nالمجدُ للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأيُّها الثالوثُ القدُّوس ارحمنا. يا ربُّ اغفر خطايانا. يا سيد تجاوز عن سيئاتنا. يا قدوسُ اطلع واشفِ أمراضَنا من أجل اسمكَ. يا ربُّ ارحم يا ربُّ ارحم يا ربّ ارحم.\n\nالمجد للآب والابن والروح القدس الآن وكل أوان وإلى دهر الداهرين. آمين\n\nأبانا الذي في السماوات. ليتقدَّس اسمُك. ليأتِ ملكوتُك. لتكُن مشيئتُك. كما في السماءِ كذلك على الأرض. خبزَنا الجوهري أعطِنا اليوم. واترك لنا ما علينا كما نتركُ نحنُ لمن لنا عليه. ولا تُدخلنا في تجربة. لكن نجِّنا من الشرير. آمين\n\nبصلوات آبائنا القديسين أيها الرب يسوع المسيح إلهنا ارحمنا وخلصنا، آمين",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النهوض من النوم – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%B6_%D9%85%D9%86_%D8%A7%D9%84%D9%86%D9%88%D9%85"
+}
+},
+{
+"id": "e02",
+"title_en": "Troparia of Thanksgiving",
+"title_ar": "طروباريات الشكر",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Now that the day hath come to a close, I thank thee, O Lord, and I ask that the evening with the night may be sinless; grant this to me, O Saviour, and save me.\n\nGlory to the Father and to the Son and to the Holy Spirit.\n\nNow that the day hath passed, I glorify thee, O Master, and I ask that the evening with the night may be without offence; grant this to me, O Saviour, and save me.\n\nBoth now and ever, and unto ages of ages. Amen.\n\nNow that the day hath run its course, I praise thee, O Holy One, and I ask that the evening with the night may be undisturbed; grant this to me, O Saviour, and save me.\n\nLord, have mercy. (twelve times)",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "e03",
+"title_en": "An Evening Prayer of Repentance",
+"title_ar": "صلاة توبة مسائيّة",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O Lord our God, if during this day I have sinned, whether in word or deed or thought, forgive me all, for thou art good and lovest mankind. Grant me peaceful and undisturbed sleep, and deliver me from all influence and temptation of the evil one. Raise me up again in proper time that I may glorify thee; for thou art blessed, with thine only-begotten Son and thine all-holy Spirit, now and ever, and unto ages of ages. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "e04",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "O most glorious, ever-virgin, blessed Theotokos, present our prayer to thy Son, our God, and intercede with him that through thee he may save our souls.",
+"text_ar": "أيتها المجيدةُ المبارَكةُ والدةُ الإله الدائمةُ البتولية، قدِّمي صلاتَنا إلى ابنِكِ وإلهِنا، متوسلَةً إليه لكي يخلِّصَ بِكِ نفوسَنا.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "e05",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "My hope is the Father; my refuge is the Son; my shelter is the Holy Spirit. O Holy Trinity, glory to thee.",
+"text_ar": "الآبُ رجائي والابنُ ملجأي والروحُ القدسُ وقائي، أيها الثالوثُ القدوسُ المجدُ لك.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "e06",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "In thee, O Mother of God, I place all my hope; keep me under thy protection.",
+"text_ar": "عليكِ وضعتُ كلَّ رجائي يا والدةَ الإله، فاحفَظيني تحت سترِ وِقايَتِكِ.",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "e07",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Rejoice, O Virgin Theotokos; Mary, full of grace, the Lord is with thee. Blessed art thou among women, and blessed is the fruit of thy womb, for thou hast borne the Saviour of our souls.",
+"text_ar": "افرحي يا والدةَ الإلهِ العذراءَ مريمَ الممتلئةَ نعمةً الربُ معكِ، مباركةٌ أنتِ في النساءِ ومباركٌ ثمرُ بطنكِ لأنكِ ولدتِ مخلصَ نفوسِنا",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "verified",
+"title": "صلاة النوم الصغرى – كنيسة القديس أنطونيوس الكبير، زحلة",
+"url": "https://stantoniosthegreat.com/article/%D8%B5%D9%84%D8%A7%D8%A9_%D8%A7%D9%84%D9%86%D9%88%D9%85_%D8%A7%D9%84%D8%B5%D8%BA%D8%B1%D9%89"
+}
+},
+{
+"id": "e08",
+"title_en": "A Prayer to One’s Patron Saint",
+"title_ar": "صلاة إلى القدّيس شفيعك",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "",
+"rubric_ar": "",
+"text_en": "Pray unto God for me, O Saint N., well-pleasing to God, for I flee unto thee, who art the speedy helper and intercessor for my soul.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+},
+{
+"id": "e09",
+"title_en": "",
+"title_ar": "",
+"sub_en": "",
+"sub_ar": "",
+"rubric_en": "(Private devotions may be added here.) As you lie down to sleep, say:",
+"rubric_ar": "(هنا يمكن إضافة الصلوات الخاصّة.) وعند الاستلقاء للنوم قل:",
+"text_en": "Into thy hands, O Lord, I commend my soul and my body. Do thou thyself bless me, have mercy upon me and grant me life eternal. Amen.",
+"text_ar": "",
+"after_en": "",
+"after_ar": "",
+"ar_source": {
+"kind": "none"
+}
+}
+]
+}
+]
+}
