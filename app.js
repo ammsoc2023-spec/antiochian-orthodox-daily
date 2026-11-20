@@ -1,4 +1,4 @@
-/* Antiochian Orthodox Daily 2026 – offline PWA. No external resources, no tracking. */
+/* Antiochian Orthodox Daily 2026 – offline PWA. No tracking. Bible tabs load orthodoxbibleonline.com, st-takla.org in an iframe only when opened (needs internet; no Bible text is copied or cached). */
 'use strict';
 (function(){
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
@@ -80,7 +80,7 @@ function applySettings(){
   $$('[data-close]').forEach(b=>b.textContent=u.close);
   $('#mTitle').textContent=u.settings;$('#mFont').textContent=u.font;$('#mTheme').textContent=u.theme;$('#mExpand').textContent=u.sections;
   $('#openAll').textContent=u.openall;$('#closeAll').textContent=u.closeall;$('#mAbout').textContent=u.about;
-  TTS.labels(); rtlArrows();
+  TTS.labels(); rtlArrows(); if(typeof bibleLabels==='function') bibleLabels();
 }
 
 /* ---------- render ---------- */
@@ -134,6 +134,7 @@ function iconBlock(ic,iso){
 }
 async function show(iso,opts){
   if(prayersOpen) closePrayers();
+  if(bibleOpen) closeBible();
   if(view!=='day'){ view='day'; document.body.classList.remove('mv'); $('#month').hidden=true; $('#day').hidden=false; $('.mvnav').hidden=true; window.scrollTo(0,0) }
   iso=clamp(iso); cur=iso;
   if(location.hash!=='#'+iso) history.replaceState(null,'','#'+iso);
@@ -213,6 +214,7 @@ async function renderPrayers(){
 }
 function openPrayers(push){
   closePanels();
+  if(bibleOpen) closeBible();
   if(!prayersOpen){
     pvFrom=view; prayersOpen=true; document.body.classList.add('pv'); $('#day').hidden=true; $('#month').hidden=true; $('#prayers').hidden=false; $('.pvnav').hidden=false;
     $('#btnPrayers').classList.add('on'); $('#btnToday').classList.remove('on');
@@ -244,6 +246,88 @@ const MV_MONTH=()=>Promise.resolve(null);
 const MV_SUB=(ym,mj,A)=>{const s=$('#mvSub'); s.textContent=monthTitle(ym,!A); s.lang=A?'en':'ar'; s.dir=A?'ltr':'rtl'};
 const MV_CELL=()=>'';
 const MV_FEAST=(iso,e,wd,main)=>main&&(e.g||(e.r&&wd!==6&&main[2]===1))?{en:main[0],ar:main[1]}:null;
+
+/* ---------- Bible tabs (embed the sites in an iframe; no Bible text is copied or cached) ---------- */
+const BIBLES={"bible": {"url": "https://www.orthodoxbibleonline.com/", "hash": "#bible", "label": {"en": "Bible", "ar": "Bible", "both": "Bible"}, "title": {"en": "Orthodox Bible (English)", "ar": "الكتاب المقدّس (بالإنكليزيّة)", "both": "Orthodox Bible (English) · الكتاب المقدّس (بالإنكليزيّة)"}, "frame": "Orthodox Bible Online", "btn": "btnBible"}, "arabic": {"url": "https://st-takla.org/Holy-Bible_.html", "hash": "#bible-ar", "label": {"en": "Arabic Bible", "ar": "الكتاب المقدّس", "both": "الكتاب المقدّس"}, "title": {"en": "Arabic Bible", "ar": "الكتاب المقدّس", "both": "Arabic Bible · الكتاب المقدّس"}, "frame": "Arabic Bible (Van Dyck) – St-Takla.org", "btn": "btnBibleAr"}};
+const BIBLE_TXT={"en": {"bibleOpen": "Open in browser", "bibleOff": "The Bible needs an internet connection. You can still use the calendar and prayers offline.", "bibleFail": "This page could not be shown here. You can open it in your browser."}, "ar": {"bibleOpen": "افتح في المتصفّح", "bibleOff": "يحتاج الكتاب المقدّس إلى اتّصال بالإنترنت. يمكنك استخدام التقويم والصلوات دون اتّصال.", "bibleFail": "تعذّر عرض هذه الصفحة هنا. يمكنك فتحها في المتصفّح."}};
+const BIBLE_HASH={}; Object.keys(BIBLES).forEach(k=>BIBLE_HASH[BIBLES[k].hash.slice(1)]=k);
+let bibleOpen=false, bibleSrc='bible', bvPushed=false, bvFrom='day', bibleLoadGen=0;
+const btx=()=>BIBLE_TXT[lang==='ar'?'ar':'en'];
+function bibleSpec(src){ return BIBLES[BIBLES[src]?src:'bible'] }
+function bibleLabels(){
+  Object.keys(BIBLES).forEach(k=>{const b=BIBLES[k], el=$('#'+b.btn); if(!el) return; el.textContent=b.label[lang]||b.label.en;
+    el.lang=/[\u0600-\u06FF]/.test(el.textContent)?'ar':'en'; el.setAttribute('aria-label',b.title[lang]||b.title.en)});
+  $('#btnBibleBack').textContent=(lang==='ar'?'› ':'‹ ')+ui().back;
+  $('#bibleExt').textContent=btx().bibleOpen;
+  if(bibleOpen){ applyBibleChrome(); syncBibleOfflineMsg(); if(!$('#bibleFallback').hidden) showBibleFallback() }
+}
+function applyBibleChrome(){
+  const b=bibleSpec(bibleSrc);
+  $('#bvTitle').textContent=b.title[lang]||b.title.en;
+  $('#bibleExt').setAttribute('href',b.url); $('#bibleExt').textContent=btx().bibleOpen;
+  $('#bibleFrame').title=b.frame;
+  Object.keys(BIBLES).forEach(k=>{const el=$('#'+BIBLES[k].btn); if(el) el.classList.toggle('on',!!(bibleOpen&&bibleSrc===k))});
+}
+const bibleMsg=key=>lang==='both'?`<p>${esc(BIBLE_TXT.en[key])}</p><p dir="rtl" lang="ar">${esc(BIBLE_TXT.ar[key])}</p>`:`<p>${esc(btx()[key])}</p>`;
+function syncBibleOfflineMsg(){ $('#bibleOffline').innerHTML=bibleMsg('bibleOff') }
+function showBibleFallback(){
+  const b=bibleSpec(bibleSrc), box=$('#bibleFallback'), fr=$('#bibleFrame');
+  box.innerHTML=bibleMsg('bibleFail')+`<p><a id="bibleFallbackOpen" href="${esc(b.url)}" target="_blank" rel="noopener noreferrer">${esc(btx().bibleOpen)}</a></p>`;
+  box.hidden=false; if(fr) fr.hidden=true;
+}
+function resetBibleFrame(){
+  const old=$('#bibleFrame'); if(!old) return null;
+  const fr=old.cloneNode(false); fr.removeAttribute('src'); fr.hidden=old.hidden; old.replaceWith(fr); return fr;
+}
+function frameLooksBlank(fr){
+  try{ const href=fr.contentWindow&&fr.contentWindow.location&&String(fr.contentWindow.location.href||'');
+    return !href||href==='about:blank'||href.startsWith('chrome-error')||href.startsWith('chrome://');
+  }catch(e){ return false } // SecurityError: a cross-origin page loaded
+}
+function syncBibleFrame(){
+  const online=navigator.onLine!==false, off=$('#bibleOffline'), fall=$('#bibleFallback'), b=bibleSpec(bibleSrc);
+  let fr=$('#bibleFrame');
+  syncBibleOfflineMsg(); applyBibleChrome();
+  if(!online){ off.hidden=false; fall.hidden=true; fr=resetBibleFrame()||fr; fr.hidden=true; return }
+  off.hidden=true;
+  if(fr.getAttribute('src')!==b.url){
+    const gen=++bibleLoadGen; fall.hidden=true;
+    fr=resetBibleFrame(); fr.hidden=false;
+    fr.onload=()=>{ if(gen!==bibleLoadGen) return; if(frameLooksBlank(fr)) showBibleFallback() };
+    fr.onerror=()=>{ if(gen!==bibleLoadGen) return; showBibleFallback() };
+    fr.setAttribute('src',b.url);
+    // a cross-origin error page cannot be told apart from a loaded page, so also check the site answers at all
+    try{ fetch(b.url,{mode:'no-cors',cache:'no-store',credentials:'omit'}).catch(()=>{ if(gen===bibleLoadGen&&bibleOpen&&navigator.onLine!==false) showBibleFallback() }) }catch(e){}
+    setTimeout(()=>{ if(gen!==bibleLoadGen||!bibleOpen||navigator.onLine===false||!fall.hidden) return;
+      if(frameLooksBlank($('#bibleFrame'))) showBibleFallback() }, 8000);
+  } else { fall.hidden=true; fr.hidden=false }
+}
+function openBible(src, push){
+  src=BIBLES[src]?src:'bible';
+  closePanels();
+  if(prayersOpen) closePrayers();
+  try{ TTS.stop() }catch(e){}
+  const want=bibleSpec(src).hash, switching=bibleOpen&&bibleSrc!==src;
+  if(!bibleOpen){
+    bvFrom=view; bibleOpen=true; bibleSrc=src; document.body.classList.add('bv');
+    $('#day').hidden=true; $('#month').hidden=true; $('#prayers').hidden=true; $('#bible').hidden=false; $('.bvnav').hidden=false;
+    $('#btnToday').classList.remove('on'); $('#btnPrayers').classList.remove('on');
+    if(push){ history.pushState(null,'',want); bvPushed=true } else if(location.hash!==want) history.replaceState(null,'',want);
+    window.scrollTo(0,0);
+  } else if(switching){
+    bibleSrc=src; bibleLoadGen++; $('#bibleFrame').removeAttribute('src'); $('#bibleFallback').hidden=true;
+    if(push){ history.pushState(null,'',want); bvPushed=true } else if(location.hash!==want) history.replaceState(null,'',want);
+  }
+  applyBibleChrome(); syncBibleFrame();
+}
+function closeBible(){
+  if(!bibleOpen) return; bibleOpen=false; bvPushed=false; bibleLoadGen++;
+  document.body.classList.remove('bv'); $('#bible').hidden=true; $('.bvnav').hidden=true;
+  $$('.bpill').forEach(el=>el.classList.remove('on'));
+  $('#bibleFallback').hidden=true;
+  const fr=resetBibleFrame(); if(fr) fr.hidden=true;
+}
+function backFromBible(){ if(bvPushed){ history.back(); return } if(bvFrom==='month') showMonth(mvYM); else show(cur) }
 /* ---------- month view (opens on launch) ---------- */
 let view='day', mvYM=MONTHS[0], dayPushed=false, pvFrom='day';
 const vmonth=h=>MONTHS.includes(h)?h:'';
@@ -251,6 +335,7 @@ const monthTitle=(ym,A)=>{const M=+ym.slice(5,7);return (A?MON_AR[M-1]:MON_EN[M-
 function showMonth(ym,opts){
   opts=opts||{}; if(!MONTHS.includes(ym)) ym=ym<MONTHS[0]?MONTHS[0]:MONTHS[MONTHS.length-1];
   if(prayersOpen) closePrayers();
+  if(bibleOpen) closeBible();
   const was=view; view='month'; mvYM=ym; dayPushed=false;
   document.body.classList.add('mv'); $('#day').hidden=true; $('#month').hidden=false; $('.mvnav').hidden=false;
   if(!opts.noHash&&location.hash!=='#'+ym) history.replaceState(null,'','#'+ym);
@@ -490,7 +575,7 @@ const TTS=(function(){
     start();
   }
   function refreshDay(){ if(st.playing&&!st.paused) highlight(st.q[st.i]); status() }
-  return {ok,init,labels,fromDay,refreshDay,_state:st,_build:build,_buildPrayers:buildPrayers,_heading:heading,_chunks:chunks,_note:note,_voiceFor:voiceFor};
+  return {ok,init,stop,labels,fromDay,refreshDay,_state:st,_build:build,_buildPrayers:buildPrayers,_heading:heading,_chunks:chunks,_note:note,_voiceFor:voiceFor};
 })();
 window.AOD_TTS=TTS;
 
@@ -504,7 +589,10 @@ function init(){
   $('#month').addEventListener('click',e=>{const b=e.target.closest('button[data-d]'); if(b) openDay(b.dataset.d)});
   $('#btnPrayers').onclick=()=>prayersOpen?backToCalendar():openPrayers(true);
   $('#btnBack').onclick=backToCalendar;
-  $$('#langSeg button').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;LS.set('lang',lang);applySettings();updateNav();if(prayersOpen)renderPrayers();else if(view==='month')renderMonth();else show(cur,{keepScroll:true})});
+  $$('.bpill').forEach(el=>el.onclick=()=>{const k=el.dataset.bible; if(bibleOpen&&bibleSrc===k) backFromBible(); else openBible(k,true)});
+  $('#btnBibleBack').onclick=backFromBible;
+  window.addEventListener('online',()=>{ if(bibleOpen) syncBibleFrame() }); window.addEventListener('offline',()=>{ if(bibleOpen) syncBibleFrame() });
+  $$('#langSeg button').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;LS.set('lang',lang);applySettings();updateNav();if(bibleOpen){}else if(prayersOpen)renderPrayers();else if(view==='month')renderMonth();else show(cur,{keepScroll:true})});
   $('#btnCal').onclick=backToMonth;
   $('#btnSearch').onclick=()=>{openPanel('#searchPanel');setTimeout(()=>$('#q').focus(),50);doSearch()};
   let qt; $('#q').oninput=()=>{clearTimeout(qt);qt=setTimeout(doSearch,150)};
@@ -521,7 +609,7 @@ function init(){
   $('#openAll').onclick=()=>setAll(true); $('#closeAll').onclick=()=>setAll(false);
   document.addEventListener('keydown',e=>{ if(e.target.matches('input,select,textarea'))return;
     const rtl=document.documentElement.dir==='rtl';
-    if(e.key==='Escape')closePanels(); else if(prayersOpen) return; else if(view==='month'){ if(e.key==='ArrowLeft')stepMonth(rtl?1:-1); else if(e.key==='ArrowRight')stepMonth(rtl?-1:1) } else if(e.key==='ArrowLeft')step(rtl?1:-1); else if(e.key==='ArrowRight')step(rtl?-1:1) });
+    if(e.key==='Escape')closePanels(); else if(prayersOpen||bibleOpen) return; else if(view==='month'){ if(e.key==='ArrowLeft')stepMonth(rtl?1:-1); else if(e.key==='ArrowRight')stepMonth(rtl?-1:1) } else if(e.key==='ArrowLeft')step(rtl?1:-1); else if(e.key==='ArrowRight')step(rtl?-1:1) });
   // swipe: left = next day (both directions of text keep the same gesture as the Macedonian app)
   let sx=0,sy=0,st0=0,ok=false; const main=$('#day');
   main.addEventListener('touchstart',e=>{if(e.touches.length!==1){ok=false;return}sx=e.touches[0].clientX;sy=e.touches[0].clientY;st0=Date.now();ok=true},{passive:true});
@@ -533,16 +621,17 @@ function init(){
   mv.addEventListener('touchend',e=>{ if(!mok)return; mok=false; const t=e.changedTouches[0],dx=t.clientX-mx,dy=t.clientY-my;
     if(Math.abs(dx)>60&&Math.abs(dx)>1.8*Math.abs(dy)&&Date.now()-mt<800) stepMonth(dx<0?1:-1) },{passive:true});
   window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);
-    if(h==='prayers'){ if(!prayersOpen) openPrayers(false); return }
+    if(BIBLE_HASH[h]){ if(prayersOpen) closePrayers(); openBible(BIBLE_HASH[h],false); return }
+    if(h==='prayers'){ if(bibleOpen) closeBible(); if(!prayersOpen) openPrayers(false); return }
     const mm=vmonth(h);
-    if(mm){ const t=view==='day'?cur.slice(0,7):mm; if(prayersOpen||view!=='month'||mvYM!==t) showMonth(t,{noHash:t===mm}); return }
-    if(valid(h)){ if(view!=='day'||prayersOpen||h!==cur) show(h); return }
+    if(mm){ const t=view==='day'?cur.slice(0,7):mm; if(bibleOpen||prayersOpen||view!=='month'||mvYM!==t) showMonth(t,{noHash:t===mm}); return }
+    if(valid(h)){ if(view!=='day'||prayersOpen||bibleOpen||h!==cur) show(h); return }
     if(!h) showMonth(cur.slice(0,7),{noHash:true}) });
   $('#foot').innerHTML='Sources: دليل الكرسي الأنطاكي 2026 (Antiochian Typikon 2026, Patriarchate of Antioch) · official Arabic service texts of the Antiochian Orthodox Christian Archdiocese of North America where published · prayers: antiochian.org (English) and the Antiochian Arabic prayer book texts (صلاة النهوض من النوم، صلاة النوم الصغرى) · day icons from Wikimedia Commons (public domain / free licences, credited under each icon). Works offline. No tracking.';
   $('#foot').innerHTML=mix($('#foot').textContent);
-  // On launch the app opens on the current month; deep links (#YYYY-MM-DD, #YYYY-MM, #prayers) still work.
+  // On launch the app opens on the current month; deep links (#YYYY-MM-DD, #YYYY-MM, #prayers, #bible, #bible-ar) still work.
   const h=location.hash.slice(1); cur=todayInRange(); updateNav();
-  if(valid(h)) show(h); else { showMonth(vmonth(h)||cur.slice(0,7)); if(h==='prayers') openPrayers(false) }
+  if(valid(h)) show(h); else { showMonth(vmonth(h)||cur.slice(0,7)); if(h==='prayers') openPrayers(false); else if(BIBLE_HASH[h]) openBible(BIBLE_HASH[h],false) }
   loadIndex().catch(()=>{});
   if('serviceWorker' in navigator){
     navigator.serviceWorker.register('sw.js').then(()=>navigator.serviceWorker.ready).then(()=>{window.AOD_SW='ready';navigator.serviceWorker.ready.then(reg=>{if(reg.active)reg.active.postMessage('warm-icons')}).catch(()=>{});$('#swStatus').textContent=ui().offline})
@@ -556,6 +645,6 @@ async function loadAbout(){
     $('#aboutBody').innerHTML=a.cover.map(c=>`<p class="small">${mix(c).replace(/\n/g,'<br>')}</p>`).join('')+'<ul>'+a.howto_en.map(x=>`<li>${mix(x)}</li>`).join('')+'</ul>'
       +'<ul dir="rtl" lang="ar" class="arsec">'+a.howto_ar.map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>';}catch(e){aboutDone=false}
 }
-window.AOD={show,step,showMonth,openDay,backToMonth,stepMonth,get view(){return prayersOpen?'prayers':view},get month(){return mvYM},get cur(){return cur},loadMonth,sydneyToday,openPrayers,closePrayers:backToCalendar,get prayersOpen(){return prayersOpen}};
+window.AOD={openBible,closeBible:backFromBible,get bibleOpen(){return bibleOpen},get bibleSrc(){return bibleSrc},BIBLES,show,step,showMonth,openDay,backToMonth,stepMonth,get view(){return bibleOpen?'bible:'+bibleSrc:prayersOpen?'prayers':view},get month(){return mvYM},get cur(){return cur},loadMonth,sydneyToday,openPrayers,closePrayers:backToCalendar,get prayersOpen(){return prayersOpen}};
 init();
 })();
