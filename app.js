@@ -898,8 +898,7 @@ function init(){
     if(mm){ const t=view==='day'?cur.slice(0,7):mm; if(bibleOpen||prayersOpen||view!=='month'||mvYM!==t) showMonth(t,{noHash:t===mm}); return }
     if(valid(h)){ if(view!=='day'||prayersOpen||bibleOpen||h!==cur) show(h); return }
     if(!h) showMonth(cur.slice(0,7),{noHash:true}) });
-  $('#foot').innerHTML='Sources: دليل الكرسي الأنطاكي 2026 (Antiochian Typikon 2026, Patriarchate of Antioch) · official Arabic service texts of the Antiochian Orthodox Christian Archdiocese of North America where published · prayers: antiochian.org (English) and the Antiochian Arabic prayer book texts (صلاة النهوض من النوم، صلاة النوم الصغرى) · day icons from Wikimedia Commons (public domain / free licences, credited under each icon). Works offline. No tracking.';
-  $('#foot').innerHTML=mix($('#foot').textContent);
+  $('#foot').innerHTML='<p class="copy" dir="ltr">Copyright © 2026 ZB</p><p>'+mix('Sources: دليل الكرسي الأنطاكي 2026 (Antiochian Typikon 2026, Patriarchate of Antioch) · official Arabic service texts of the Antiochian Orthodox Christian Archdiocese of North America where published · prayers: antiochian.org (English) and the Antiochian Arabic prayer book texts (صلاة النهوض من النوم، صلاة النوم الصغرى) · day icons from Wikimedia Commons (public domain / free licences, credited under each icon). Works offline. No tracking.')+'</p>';
   // On launch the app opens on the current month; deep links (#YYYY-MM-DD, #YYYY-MM, #prayers, #bible, #bible-ar) still work.
   const h=location.hash.slice(1); cur=todayInRange(); updateNav();
   if(valid(h)) show(h); else { showMonth(vmonth(h)||cur.slice(0,7)); if(h==='prayers') openPrayers(false); else if(BIBLE_HASH[h]) openBible(BIBLE_HASH[h],false) }
